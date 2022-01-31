@@ -1,0 +1,45 @@
+@use '../custom' as *;
+
+.menu-items{
+    
+
+    form{
+        @include media-breakpoint-down(sm){
+            width: 100%;
+            // top: 2rem;
+            margin: 0 auto;
+            // display: block;
+            // display: none;
+        }
+        position: relative;
+        width: 100%;
+        margin: 0 5rem 0 5rem;
+        input{
+            padding-left: 3.5rem;
+            border-radius: 1.25rem !important;
+            margin-top: 1rem;
+        }
+        button{
+            position: absolute;
+            top: 50%;
+            left: 1.5rem;
+            transform: translate(-50%,-30%);
+            // line-height: ;
+        }
+    }
+
+    ul{
+        li{
+            margin: 0 0.5rem;
+            padding: 0 0.5rem;
+            a{
+                padding: 0 0.9rem;
+                font-size: 0.8rem;
+                text-align: center;
+                justify-content: center;
+                text-transform: uppercase;
+            }
+        }
+
+    }
+}
